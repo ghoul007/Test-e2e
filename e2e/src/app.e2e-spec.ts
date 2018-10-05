@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser } from 'protractor';
+import { browser, element, by } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,15 +8,18 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    browser.get('https://angularjs.org')
-    browser.sleep(5000)
-console.log('fffffffff');
-    expect(page.getParagraphText()).toEqual('Welcome to protractor!');
-  });
 
-   it('test2', () => {
-    expect(true).toBe(true)
+
+  it('Protractor element demo', () => {
+    browser.waitForAngularEnabled(false);
+    browser.get('https://www.google.com')
+    browser.get('http://juliemr.github.io/protractor-demo')
+    element(by.model('first')).sendKeys("5");
+    element(by.model('second')).sendKeys("5");
+    element(by.id('gobutton')).click()
+    browser.sleep(3000)
+
+   
+    expect( element(by.css("h2[class='ng-binding']")).getText()).toBe("10")
   });
 });
