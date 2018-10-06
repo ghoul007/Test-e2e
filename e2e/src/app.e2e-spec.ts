@@ -26,7 +26,7 @@ describe('workspace-project App', () => {
 
 
 
-  it('Protractor element demo', () => {
+  xit('Protractor element demo', () => {
     browser.waitForAngularEnabled(false);
     browser.get('https://www.google.com')
     browser.get('http://juliemr.github.io/protractor-demo')
