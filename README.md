@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # E2e
+=======
+# Protractor
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 

@@ -22,6 +22,10 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
+<<<<<<< HEAD
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to e2e!');
+=======
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to protractor!');
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
   }));
 });

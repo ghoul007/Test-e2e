@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "e2e": {
+=======
+    "protractor": {
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/e2e",
+=======
+            "outputPath": "dist/protractor",
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +58,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "e2e:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "e2e:build:production"
+=======
+            "browserTarget": "protractor:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "protractor:build:production"
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "e2e:build"
+=======
+            "browserTarget": "protractor:build"
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
           }
         },
         "test": {
@@ -95,7 +115,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "e2e-e2e": {
+=======
+    "protractor-e2e": {
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +127,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "e2e:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "e2e:serve:production"
+=======
+            "devServerTarget": "protractor:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "protractor:serve:production"
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
             }
           }
         },
@@ -123,5 +155,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "e2e"
+=======
+  "defaultProject": "protractor"
+>>>>>>> d1882f61d27fcb2f7216ec45765fb536dd51366f
 }
